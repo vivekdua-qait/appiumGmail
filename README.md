@@ -1,4 +1,4 @@
-AppiumJavaSample
+Upload Image in Google Photos and Send as an attachment through Gmail
 
 Setting up your machine
 Prerequisites before running the script for Appium setup
