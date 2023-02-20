@@ -65,8 +65,8 @@ public class BaseTest {
 		return fileName;
 	}
 
-	@AfterSuite
-	public void afterSuite() {
+//	@AfterSuite
+	public void terminateServer() {
 		if (null != localAppiumServer) {
 			System.out.println(String.format("Stopping the local Appium server running on: '%s'",
 					localAppiumServer.getUrl().toString()));

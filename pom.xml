@@ -25,10 +25,10 @@
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.6.0</version>
-</dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.6.0</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -42,12 +42,11 @@
 			<version>4.6.0</version>
 		</dependency>
 
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.6.1</version>
-    <scope>test</scope>
-</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.7.0</version>
+		</dependency>
 
 	</dependencies>
 
@@ -57,7 +56,12 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M5</version>
-			</plugin>
+				 <configuration>
+                  <suiteXmlFiles>
+                     <suiteXmlFile>src/test/java/resources/testng.xml</suiteXmlFile>
+                  </suiteXmlFiles>
+               </configuration>
+              </plugin> 
 		</plugins>
 	</build>
 </project>

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Testing Google Apps">
+	<test name="Upload Image And Send Email">
+		<classes>
+			<class name="headspin.testApp.Tests.UploadImageAndSendEmail"/>
+		</classes>
+	</test>
+</suite>
